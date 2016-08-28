@@ -2,7 +2,13 @@
 
 Test helper for using dependency injected components. Read the [blog post](https://emberway.io/component-dependency-injection-in-ember-js-a46a39a5d30a#.6do6b9t6o) for more detail on using dependency injection (DI) to reduce coupling of your components.
 
-## Usage
+Compatible with Ember LTS (`2.4.x`) and up only.
+
+```
+ember install ember-test-component
+```
+
+## Dependency injection for the UI layer
 
 Let's say you have a parent component with a number of child components in its template. Using dependency injection (DI) means that we pass in the child components to the parent component as opposed to using them directly in the parent's template. For example, here is how you would pass components into your parent component:
 
@@ -26,7 +32,7 @@ Then, in your parent component's template:
 {{ui.location-activity baz="baz"}}
 ```
 
-## Tests
+## Usage
 
 Now in your parent component's integration test, we can register a test component (called `test-component`) which will be used in place of our child components.
 
@@ -43,7 +49,7 @@ moduleForComponent('...', {
 });
 ```
 
-This will ensure the `test-component` will not leak to other tests. Then, we can use `registerTestComponent` to make our `test-component`. 
+This will ensure the `test-component` will not leak to other tests. Then, we can use `registerTestComponent` to make our `test-component`.
 
 ```js
 test('it does something', function(assert) {

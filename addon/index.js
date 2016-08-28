@@ -1,10 +1,8 @@
 import Ember from 'ember';
+import getOwner from 'ember-getowner-polyfill';
 
-const {
-  Component,
-  assign,
-  getOwner
-} = Ember;
+const { Component } = Ember;
+const assign = Ember.assign || Ember.merge;
 
 export function registerTestComponent(context, opts = {}) {
   let owner = getOwner(context);

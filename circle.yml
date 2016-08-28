@@ -5,7 +5,6 @@ dependencies:
   pre:
     - npm install -g bower
   post:
-    - npm install
     - bower install
 test:
   override:
