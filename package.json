@@ -1,6 +1,6 @@
 {
   "name": "ember-test-component",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create dummy components in a test environment",
   "directories": {
     "doc": "doc",
@@ -12,8 +12,8 @@
     "test": "ember try:each"
   },
   "repository": "https://github.com/poteto/ember-test-component",
-    "bugs": "https://github.com/poteto/ember-test-component/issues",
-    "homepage": "https://github.com/poteto/ember-test-component",
+  "bugs": "https://github.com/poteto/ember-test-component/issues",
+  "homepage": "https://github.com/poteto/ember-test-component",
   "engines": {
     "node": ">= 0.10.0"
   },
