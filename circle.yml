@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: "stable"
+dependencies:
+  pre:
+    - npm install -g bower
+  post:
+    - bower install
+test:
+  override:
+    - npm test
