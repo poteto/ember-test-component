@@ -39,7 +39,7 @@ Now in your parent component's integration test, we can register a test componen
 First, we'll need to add a small bit of setup by importing the test helpers and setting up `beforeEach` hooks:
 
 ```js
-import { registerTestComponent, unregisterTestComponent } from 'ember-test-component';
+import { registerTestComponent, unregisterTestComponent } from 'my-app/tests/ember-test-component';
 
 moduleForComponent('...', {
   integration: true,

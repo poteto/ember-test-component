@@ -1,6 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
-import { registerTestComponent, unregisterTestComponent } from 'ember-test-component';
+import { registerTestComponent, unregisterTestComponent } from 'dummy/tests/ember-test-component';
 import layout from 'dummy/templates/components/foo-bar';
 
 moduleForComponent('ui-parent', 'Integration | Component | ui parent', {
