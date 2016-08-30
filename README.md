@@ -14,6 +14,7 @@ Let's say you have a parent component with a number of child components in its t
 
 ```hbs
 <!-- application.hbs -->
+
 {{edit-location 
     ui=(hash
       location-map=(component "google-map")
@@ -89,7 +90,7 @@ test('it does something', function(assert) {
     layout,
     foo: "i'm a dummy"
   });
-  # ... 
+  // ... 
 });
 ```
 
