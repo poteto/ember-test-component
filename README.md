@@ -44,8 +44,8 @@ import { registerTestComponent, unregisterTestComponent } from 'my-app/tests/emb
 
 moduleForComponent('...', {
   integration: true,
-  beforeEach({ test: testCtx }) {
-    unregisterTestComponent(testCtx.testEnvironment);
+  beforeEach() {
+    unregisterTestComponent(this);
   }
 });
 ```
